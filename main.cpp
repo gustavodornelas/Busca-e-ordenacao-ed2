@@ -141,9 +141,9 @@ int buscaBinaria(int v[], int n, int x){
     return -1;
 }
 
-void criaVetor(int v[], int q){
+void criaVetor(int v[], int n){
 
-    for (int i=0; i < q; i++){
+    for (int i=0; i < n; i++){
         v[i] = rand();
     }
 
