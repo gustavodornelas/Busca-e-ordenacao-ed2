@@ -141,7 +141,7 @@ int buscaBinaria(int v[], int n, int x){
     return -1;
 }
 
-void criaVetor(int q, int v[]){
+void criaVetor(int v[], int q){
 
     for (int i=0; i < q; i++){
         v[i] = rand();
@@ -180,7 +180,7 @@ int main (){
             scanf("%d", &quantidade);
 
             if (quantidade > 1 && quantidade <= MAX_SIZE){
-                criaVetor(quantidade, vetor);
+                criaVetor(vetor, quantidade);
                 imprimeVetor(vetor, quantidade);
                 A = true;  //Vetor Criado
                 B = false; //Vetor não Ordenado
