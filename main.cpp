@@ -27,7 +27,6 @@ char menu (){
         printf("Digite 'M' para ordenar o vetor por Merge Sort.\n");
         printf ("Opcao: ");
         scanf (" %c", &m);
-        m = toupper(m);
     }
     else if (m == 'C'){
         system ("cls");
@@ -35,10 +34,9 @@ char menu (){
         printf ("Digite 'B' para busca Binaria.\n");
         printf ("Opcao: ");
         scanf (" %c", &m);
-        m = toupper(m);
     }
 
-    return m;
+    return toupper(m);
 }
 
 void troca (int v[], int a, int b){
@@ -146,7 +144,6 @@ void criaVetor(int v[], int n){
     for (int i=0; i < n; i++){
         v[i] = rand();
     }
-
 }
 
 void imprimeVetor(int v[], int n){
@@ -275,7 +272,6 @@ int main (){
             break;
         }
     }while(opcao != 'E');
-
 
     return 0;
 }
